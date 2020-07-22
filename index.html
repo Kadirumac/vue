@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>my-first-vue-app</title>
+  </head>
+  <body>
+    <div id="app">
+
+      <h3>What is your favourite Tacos?</h3>
+      <textarea v-model="tacos">
+
+      </textarea>
+
+      <button type="submit" v-show='tacos'> Let us know</button>
+      <!-- {{text}} here
+  
+      
+      <span v-for="option in options">
+        <input type="checkbox"
+         :value="option.value"
+         :id="option.value"
+         v-model='checkedNames'/>
+      <label for="option.value">
+        checked names : {{option.value}}
+      </label>    
+      </span>
+      <span>
+        names : {{checkedNames}}
+      </span> -->
+    </div>
+    <script src="/dist/build.js"></script>
+  </body>
+</html>
